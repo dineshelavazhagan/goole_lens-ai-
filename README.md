@@ -36,6 +36,7 @@ Follow the steps below to prepare the DeepFashion dataset for similarity search:
      └── masks/
      ```
 
+
 ### Step 2: Extract Clothes Masks
 
 Run the `extract_clothes.py` script to generate masks isolating apparel regions from the images.
@@ -56,7 +57,19 @@ python extracts_tops.py
 
 python label_sep.py
 ```
+**make sure the Dataset Directory looks similar to this structure**:
+   - Extract the downloaded files and organize them into the following directory structure:
 
+     ```
+     labels_sep/
+     ├── tops/
+        ├── MEN/
+           ├── Denim/image1.......jpg
+           ├── shirts_polo/image1.......jpg
+        └── WOMEN/
+           ├── Denim/image1.......jpg
+           ├── sweters/image1.......jpg
+     ```
 
 
 ## 1. FEATURE EXTRACTION
