@@ -4,9 +4,10 @@
 
 ## Overview
 
-This repository provides tools and scripts to preprocess the **DeepFashion** dataset for similarity search tasks. The dataset includes images of men's and women's apparel, often featuring models wearing the clothing items. The preprocessing steps isolate upper garments, preparing the data for various similarity search implementations. I chose the deep fashion dataset due to my past experience with fashion searches and matches with VTON solutions; this may be the right dataset to run some evaluations on
+This repository provides tools and scripts to preprocess the **DeepFashion** dataset for similarity search tasks. The dataset includes images of men's and women's apparel, often featuring models wearing the clothing items. The preprocessing steps isolate upper garments, preparing the data for various similarity search implementations. I chose the deep fashion dataset due to my past experience with fashion searches and matches with VTON solutions; this may be the right dataset to run some evaluations on, I haven't had experience with all the solutions listed, so I had to use some online tool assistance for the implementation/ optimizations
 model files and the images are huge and are not linked with this repository
 
+Tools assisted: Kaggle, StackOverflow, FAISS(facebook), chatGPT(All code optimizations), claude, deepseek, QWQ
 ## Dataset
 
 The **DeepFashion** dataset is a comprehensive benchmark for fashion-related tasks, containing:
