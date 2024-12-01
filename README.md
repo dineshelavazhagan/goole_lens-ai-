@@ -3,8 +3,9 @@
 # DeepFashion Similarity Search
 
 ## Overview
-I chose the deep fashion dataset due to my past experience on fashion searches and matches with VTON solutions; this may be the right dataset to run some evaluations on  
-This repository provides tools and scripts to preprocess the **DeepFashion** dataset for similarity search tasks. The dataset includes images of men's and women's apparel, often featuring models wearing the clothing items. The preprocessing steps isolate upper garments, preparing the data for various similarity search implementations.
+
+This repository provides tools and scripts to preprocess the **DeepFashion** dataset for similarity search tasks. The dataset includes images of men's and women's apparel, often featuring models wearing the clothing items. The preprocessing steps isolate upper garments, preparing the data for various similarity search implementations. I chose the deep fashion dataset due to my past experience with fashion searches and matches with VTON solutions; this may be the right dataset to run some evaluations on
+model files and the images are huge and are not linked with this repository
 
 ## Dataset
 
@@ -74,7 +75,7 @@ python label_sep.py
 
 ## 1. FEATURE EXTRACTION
 
-Extracts features, indexes with LSH, and retrieves similar images.
+Extracts feature, indexes with LSH, and retrieves similar images.
 
 ## Evaluation Metrics
 
@@ -96,7 +97,7 @@ Extracts features, indexes with LSH, and retrieves similar images.
    you can make changes for dataset_dir for overall search where it searches all images instead of label-separated
    change query_image_path for different query images to try
 
-**This approach does not give desired output BUT FIASS index gives far better results compared to LSH**
+**This approach does not give the desired output BUT the FIASS index gives far better results compared to LSH**
 
 
 
@@ -111,7 +112,7 @@ Generates CLIP embeddings, builds FAISS index, retrieves, and visualizes similar
 |--------------|-----------|--------|----------|
 | CLIP + FAISS | 0.95      | 0.90   | 0.92     |
 
- **This approach Gave higher similarity results and expected outputs and have higer accuracy compared to other approaches**
+ **This approach Gave higher similarity results and expected outputs and had higher accuracy compared to other approaches**
 
 1. **Run code**:
    ```bash
@@ -123,7 +124,7 @@ Generates CLIP embeddings, builds FAISS index, retrieves, and visualizes similar
 
 ## 3. Autoencoders:
 
-Trains a convolutional autoencoder, extracts latent vectors, indexes with FAISS, retrieves and visualizes similar images.
+Trains a convolutional autoencoder, extracts latent vectors, indexes with FAISS, and retrieves and visualizes similar images.
 
 ## Evaluation Metrics
 
